@@ -25,10 +25,10 @@ use Zend\View\Renderer\RendererInterface as Renderer;
 
 class MyResolver implements ResolverInterface
 {
-  public function resolve($name, Renderer $renderer = null)
-  {
-    // write your code here 
-  }
+    public function resolve($name, Renderer $renderer = null)
+    {
+      // write your code here 
+    }
 }
 
 ```
@@ -37,13 +37,13 @@ class MyResolver implements ResolverInterface
 ```php
 <?php
 return [
-  'ht_template_resolver' => [
-    'resolvers_plugin_manager' => [
-      'invokables' => [
-        'my_resolver' => 'Application\View\Resolver\MyResolver',
-      ]
+    'ht_template_resolver' => [
+        'resolvers_plugin_manager' => [
+            'invokables' => [
+                'my_resolver' => 'Application\View\Resolver\MyResolver',
+            ]
+        ]
     ]
-  ]
 ];
 ```
 
@@ -52,13 +52,13 @@ return [
 ```php
 <?php
 return [
-  'ht_template_resolver' => [
-    'resolvers_plugin_manager' => [
-      'resolvers' => [
-        'my_resolver' => 200, // 200 means priority, the resolvers with highest priority are consulted first
-      ]
+    'ht_template_resolver' => [
+        'resolvers_plugin_manager' => [
+            'resolvers' => [
+                'my_resolver' => 200, // 200 means priority, the resolvers with highest priority are consulted first
+            ]
+          ]
     ]
-  ]
 ];
 ```
 

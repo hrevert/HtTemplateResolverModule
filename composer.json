@@ -1,5 +1,5 @@
 {
-    "name": "hrevert/ht-template-resolve-module",
+    "name": "hrevert/ht-template-resolver-module",
     "description": "HtTemplateResolverModule is a Zend Framework 2 module which allows us to easily create custom template path resolvers",
     "type": "library",
     "license": "MIT",

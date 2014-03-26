@@ -53,11 +53,9 @@ return [
 <?php
 return [
     'ht_template_resolver' => [
-        'resolvers_plugin_manager' => [
-            'resolvers' => [
-                'my_resolver' => 200, // 200 means priority, the resolvers with highest priority are consulted first
-            ]
-          ]
+        'resolvers' => [
+            'my_resolver' => 200, // 200 means priority, the resolvers with highest priority are consulted first
+        ]
     ]
 ];
 ```

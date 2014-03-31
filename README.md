@@ -9,7 +9,7 @@ HtTemplateResolverModule is a Zend Framework 2 module which allows us to easily 
 * PHP (>=5.4)
 
 # Installation
-* Add `"hrevert/ht-template-resolver-module": "dev-master",` to your composer.json and run `php composer.phar update`
+* Add `"hrevert/ht-template-resolver-module": "0.0.*",` to your composer.json and run `php composer.phar update`
 * Enable the module in `config/application.config.php`
 
 ## Basic Usage

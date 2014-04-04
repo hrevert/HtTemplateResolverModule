@@ -1,6 +1,11 @@
 HtTemplateResolverModule
 ========================
 
+[![Master Branch Build Status](https://api.travis-ci.org/hrevert/HtTemplateResolverModule.png)](http://travis-ci.org/hrevert/HtTemplateResolverModule)
+[![Latest Stable Version](https://poser.pugx.org/hrevert/ht-template-resolver-module/v/stable.png)](https://packagist.org/packages/hrevert/ht-template-resolver-module)
+[![Latest Unstable Version](https://poser.pugx.org/hrevert/ht-template-resolver-module/v/unstable.png)](https://packagist.org/packages/hrevert/ht-template-resolver-module)
+[![Total Downloads](https://poser.pugx.org/hrevert/ht-template-resolver-module/downloads.png)](https://packagist.org/packages/hrevert/ht-template-resolver-module)
+
 HtTemplateResolverModule is a Zend Framework 2 module which allows us to easily create custom template path resolvers 
 
 ##Requirements

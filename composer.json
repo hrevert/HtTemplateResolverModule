@@ -27,11 +27,8 @@
         "zendframework/zend-modulemanager": "~2.2"
     },
     "autoload": {
-        "psr-0": {
-            "HtTemplateResolverModule": "src/"
-        },
-        "classmap": [
-            "./Module.php"
-        ]
+        "psr-4": {
+            "HtTemplateResolverModule\\": "src/"
+        }
     }
 }

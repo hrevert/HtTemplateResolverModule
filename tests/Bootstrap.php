@@ -12,4 +12,4 @@ if (file_exists(__DIR__ . '/../vendor/autoload.php')) {
 
 /* var $loader \Composer\Autoload\ClassLoader */
 $loader->add('HtTemplateResolverModuleTest\\', __DIR__);
-$loader->add('HtTemplateResolverModule\\', __DIR__ . '/../src/');
+$loader->addPsr4('HtTemplateResolverModule\\', __DIR__ . '/../src/');

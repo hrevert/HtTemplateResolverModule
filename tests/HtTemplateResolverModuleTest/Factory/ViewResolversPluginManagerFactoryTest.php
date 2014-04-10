@@ -14,10 +14,17 @@ class ViewResolversPluginManagerFactoryTest extends \PHPUnit_Framework_TestCase
             'Config', 
             [
                 'ht_template_resolver' => [
-                    'resolvers_plugin_manager' => []
+                    'resolvers_plugin_manager' => [
+                        'invokables' => [
+                            'my_resolver' => 'Zend\View\Resolver\TemplatePathStack',
+                        ]
+                    ]
                 ]
             ]
         );
-        $this->assertInstanceOf('HtTemplateResolverModule\View\Resolver\ResolversPluginManager', $factory->createService($serviceManager));
+        $resolversPluginManager = $factory->createService($serviceManager);
+        $this->assertInstanceOf('HtTemplateResolverModule\View\Resolver\ResolversPluginManager', $resolversPluginManager);
+        $this->assertTrue($resolversPluginManager->has('my_resolver'));
+        $this->assertFalse($resolversPluginManager->has('resolver'));
     }
 }

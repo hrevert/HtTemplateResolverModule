@@ -9,6 +9,9 @@ HtTemplateResolverModule
 
 HtTemplateResolverModule is a Zend Framework 2 module which allows us to easily create custom template path resolvers 
 
+## DEPRECATED
+This module is deprecated. Please use [Delegator service factories](http://framework.zend.com/manual/2.3/en/modules/zend.service-manager.delegator-factories.html) to create custom template path resolvers.
+
 ##Requirements
 
 * [Zend Framework 2](https://github.com/zendframework/zf2)
